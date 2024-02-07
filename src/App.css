@@ -1,38 +1,503 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;700;800&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-container {
+  width: 75vw;
+  margin: auto;
+  font-family: "Rubik";
+}
+
+/* Hero Section */
+
+.main-hero{
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  align-items: center;
+}
+
+.left-hero{
+  width: 50%;
+}
+
+.left-hero h1{
+  font-size: 6em;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.left-hero h1 span{
+  font-weight: 800;
+}
+
+.left-hero p{
+  font-size: 1.3em;
+  margin-bottom: 40px;
+  color: rgba(79, 86, 101, 1);
+}
+
+.left-hero button{
+  background-color: #2161D5;
+  border-radius: 100px;
+  color: white;
+  font-size: 1em;
+  padding: 20px 30px 20px 30px;
+  border: none;
+}
+
+.left-hero button:hover{
+  box-shadow: 46px 9px 52px 13px rgba(33, 97, 213, 0.35);
+  transition: all 0.5s;
+}
+
+.hero-img{
+  width: 600px;
+  height: 700px;
+}
+
+/* Article Section */
+
+.main-card{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 62px;
+  text-align: left;
+}
+
+.main-article{
+  margin-top: 70px;
+  text-align: center;
+  margin-bottom: 176px;
+}
+
+.main-article button{
+  border: 1px solid #2161D5;
+  padding: 15px 35px 15px 35px;
+  border-radius: 20px;
+  background: none;
+  color: #2161D5;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+.article-child {
+  width: 30%;
+  text-align: center;
+  margin: auto;
+}
+
+.article-child h1{
+  font-size: 2.3em;
+}
+
+.article-child p {
+  color: rgba(79, 86, 101, 1);
+  margin-top: 30px;
+}
+
+.article-card{
+  padding: 32px;
+  border: 1px solid rgba(221, 221, 221, 1);
+  border-radius: 20px;
+  width: 20%;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.article-card:hover{
+  border: 1px solid rgba(33, 97, 213, 1);
+}
+
+.article-box img {
+  margin-bottom: 15px;
+}
+
+.article-box h3{
+  margin-bottom: 5px;
+}
+
+.article-box p{
+  color: rgba(79, 86, 101, 1);
+}
+
+/* Overview */
+
+.main-overview{
+  background-color: rgba(33, 97, 213, 1);
+  font-family: "Rubik";
+}
+
+.overview-top{
+  display: flex;
+}
+
+.overview-top-left{
+  width: 80%;
+  height: 500px;
+  position: relative;
+}
+
+.overview-top-left img:nth-child(1){
+  position: absolute;
+  right: 150px;
+  top: 50px;
+  font-size: 2rem;
+}
+
+.overview-top-left img:nth-child(2){
+  position: absolute;
+  width: 400px;
+  height: 500px;
+  right: 0;
+  margin-top: -50px;
+}
+
+.overview-top-right{
+  width: 100%;
+  position: relative;
+  padding: 15px 20px 15px 20px;
+}
+
+.overview-top-right img:nth-child(1) {
+  position: absolute;
+  right: 0;
+}
+
+.overview-top-text{
+  color: white;
+  position: absolute;
+  top:200px;
+  right: 30px;
+}
+
+.overview-top-text h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.overview-top-text p {
+  font-weight: 100;
+  width: 45%;
+  font-size: 1.4;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.overview-top-text button{
+  border: 1px solid white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+/* overview middle */
+
+.overview-mid{
+  display: flex;
+}
+
+.overview-mid-right{
+  width: 80%;
+  height: 800px;
+  position: relative;
+}
+
+.overview-mid-right img:nth-child(1){
+  position: absolute;
+  right: 250px;
+  font-size: 2rem;
+}
+
+.overview-mid-right img:nth-child(2){
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  right: 300px;
+  top: 100px;
+  margin-top: -50px;
+}
+
+.overview-mid-left{
+  width: 100%;
+  position: relative;
+  padding: 15px 20px 15px 20px;
+}
+
+.overview-mid-text{
+  color: white;
+  position: absolute;
+  top:400px;
+  left: 400px;
+}
+
+.overview-mid-text h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.overview-mid-text p {
+  font-weight: 100;
+  width: 70%;
+  font-size: 1.4;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.overview-mid-text button{
+  border: 1px solid white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+/* Bottom */
+
+.overview-bottom{
+  display: flex;
+}
+
+.overview-bottom-left{
+  width: 80%;
+  height: 700px;
+  position: relative;
+}
+
+.overview-bottom-left img:nth-child(1){
+  position: absolute;
+  right: 150px;
+  top: 0;
+  font-size: 2rem;
+}
+
+.overview-bottom-left img:nth-child(2){
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  right: -50px;
+  top: 200px;
+  margin-top: -50px;
+}
+
+.overview-bottom-right{
+  width: 100%;
+  position: relative;
+  padding: 15px 20px 15px 20px;
+}
+
+.overview-bottom-right img:nth-child(1) {
+  position: absolute;
+  right: 0;
+}
+
+.overview-bottom-text{
+  color: white;
+  position: absolute;
+  top:180px;
+  right: 30px;
+}
+
+.overview-bottom-text h2 {
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.overview-bottom-text p {
+  font-weight: 100;
+  width: 45%;
+  font-size: 1.4;
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+.overview-bottom-text button{
+  border: 1px solid white;
+  padding: 15px 35px 15px 35px;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+/* Demo */
+
+.demo-container{
+  width: 75vw;
+  margin: auto;
+  font-family: "Rubik";
+  margin-top: 120px;
+}
+
+.title-demo {
+  text-align: center;
+  width: 30%;
+  margin: auto;
+}
+
+.title-demo h2{
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.title-demo p {
+  line-height: 1.6;
+  margin-bottom: 25px;
+  color: rgba(79, 86, 101, 1);
+}
+
+.title-demo button{
+  background-color: #2161D5;
+  border-radius: 100px;
+  color: white;
+  font-size: 1em;
+  padding: 20px 40px 20px 40px;
+  border: none;
+}
+
+.title-demo button:hover{
+  box-shadow: 46px 9px 52px 13px rgba(33, 97, 213, 0.35);
+  transition: all 0.5s;
+}
+
+.card-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card-flex > div {
+  margin: 10px;
+}
+
+.card{
+  padding: 40px 28px 40px 28px;
+  width: 300px;
+  border-radius: 20px;
+  border: 1px solid rgba(233, 235, 240, 1);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card img{
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card h3{
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card p{
+  color: rgba(79, 86, 101, 1);
+}
+
+/* Pricing */
+
+.main-pricing {
+  width: 60%;
+  margin: auto;
+}
+
+.pricing-flex{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+}
+
+.pricing-title{
+  text-align: center;
+}
+
+.pricing-title h1{
+  font-size: 2em;
+}
+
+.pricing-title p{
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.pricing-box{
+  border: 2px solid rgba(233, 235, 240, 1);
+  width: 330px;
+  text-align: center;
+  margin-top: 40px;
+  padding: 40px 20px 40px 20px;
+  border-radius: 20px;
+}
+
+.pricing-box h3{
+  margin-top: 20px;
+}
+
+.box-child{
+  width: fit-content;
+  margin: auto;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-left: 50px;
+  margin-top: 30px;
+  flex-direction: column;
+}
+
+.box-child > div{
+  display: flex;
+  align-items: center;
+  justify-content: left
+}
+
+.box-child > div > img{
+  margin: 20px;
+}
+
+.pricing-cta{
+  margin-top: 130px;
+}
+
+.pricing-cta h1{
+  font-weight: 300;
+  color: rgba(79, 86, 101, 1);
+  font-size: 2em;
+}
+
+.pricing-cta > h1 > span{
+  font-weight: 500;
+  color: black;
+}
+
+.pricing-cta > button {
+  border: 1px solid #2161D5;
+    padding: 10px 40px 10px 40px;
+    border-radius: 20px;
+    background: none;
+    color: #2161D5;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.pricing-cta > button:hover {
+  background: #2161D5;
   color: white;
+  transition: all 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
