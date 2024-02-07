@@ -3,6 +3,7 @@ import "./App.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/navbar/navbar";
+import Footer from "./components/footer/footer";
 import HeroImg from "./assets/hero-image.svg";
 import Data from "./assets/data.svg";
 import Tech from "./assets/technology.svg";
@@ -16,6 +17,8 @@ import OvBot from "./assets/overview-bottom.png";
 import cardGeo from "./assets/geo.png";
 import Gift from "./assets/gift.png";
 import Check from "./assets/check.svg";
+import Plus from "./assets/plus.svg"
+import Minus from "./assets/minimize.svg"
 
 function App() {
   const [dropdown1, setDropdown1] = useState(false);
@@ -284,9 +287,9 @@ function App() {
           <h1>Frequently Asked Question</h1>
           <div className="faq-item">
             <div className="faq-question">
-              <span>What do you mean by public-facing usage?</span>
+              <p>What do you mean by public-facing usage?</p>
               <button onClick={() => toggleDropdown(1)}>
-                {dropdown1 ? "-" : "+"}
+                {dropdown1 ? <img src={Minus}/> : <img src={Plus}/>}
               </button>
             </div>
             {dropdown1 && <div className="faq-answer">We define public-facing usage as leveraging CARTO to power enterprise-scale applications that are made available to external parties such as clients or the public, as opposed to internal demonstration-only applications.</div>}
@@ -294,9 +297,9 @@ function App() {
 
           <div className="faq-item">
             <div className="faq-question">
-              <span>Question 2?</span>
+              <p>Can i  buy more storage for my individual plan?</p>
               <button onClick={() => toggleDropdown(2)}>
-                {dropdown2 ? "-" : "+"}
+                {dropdown2 ?  <img src={Minus}/> : <img src={Plus}/>}
               </button>
             </div>
             {dropdown2 && <div className="faq-answer">Answer 2.</div>}
@@ -304,24 +307,40 @@ function App() {
 
           <div className="faq-item">
             <div className="faq-question">
-              <span>Question 3?</span>
+              <p>What happens to my data after the trial or if i cancel my subscription?</p>
               <button onClick={() => toggleDropdown(3)}>
-                {dropdown3 ? "-" : "+"}
+                {dropdown3 ?  <img src={Minus}/> : <img src={Plus}/>}
               </button>
             </div>
             {dropdown3 && <div className="faq-answer">Answer 3.</div>}
           </div>
           <div className="faq-item">
             <div className="faq-question">
-              <span>Question 4?</span>
+              <p>Can i cancel my monthly or annual subscription?</p>
               <button onClick={() => toggleDropdown(4)}>
-                {dropdown4 ? "-" : "+"}
+                {dropdown4 ?  <img src={Minus}/> : <img src={Plus}/>}
               </button>
             </div>
             {dropdown4 && <div className="faq-answer">Answer 4.</div>}
           </div>
+
+          <button>
+            Add Question
+          </button>
+        </section>
+        {/* Subscribe Now */}
+        <section className="cta">
+          <div>
+            <h1>Subscribe Now for  <br/> Get Special Features!</h1>
+            <p>Lets's subscribe with us and find the fun.</p>
+          </div>
+          <div>
+            <button>Subscribe Now</button>
+          </div>
         </section>
       </main>
+      {/* Footer */}
+      <Footer/>
     </>
   );
 }

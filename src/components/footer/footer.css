@@ -1,0 +1,36 @@
+.footer-main{
+    background-color: rgba(248, 248, 248, 1);
+    margin-top: 120px;
+    padding: 50px;
+}
+
+.footer-child{
+    width: 75vw;
+    margin: auto;
+    display: flex;
+}
+
+.left-footer{
+    background-color: red;
+    width: 70%;
+}
+
+.left-footer p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.product{
+    background-color: blue;
+    width: 30%;
+}
+
+.engage{
+    background-color: rgb(255, 31, 169);
+    width: 30%;
+}
+
+.money{
+    background-color: yellow;
+    width: 30%;
+}

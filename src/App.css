@@ -509,11 +509,25 @@
   width: 60%;
   margin: auto;
   margin-top: 240px;
+  text-align: center;
+}
+
+.faq-section button{
+  border: 1px solid #2161D5;
+  padding: 10px 40px 10px 40px;
+  border-radius: 20px;
+  background: none;
+  color: #2161D5;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .faq-section h1{
   text-align: center;
   font-size: 2.5em;
+  margin-bottom: 50px;
 }
 
 .faq-item {
@@ -524,8 +538,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px;
-  background-color: #eee;
+  padding: 30px;
+  border: 1px solid rgba(233, 235, 240, 1);
+}
+
+.faq-question p{
+  font-size: 1.2em;
+  font-weight: 500;
 }
 
 .faq-question button {
@@ -535,6 +554,58 @@
 }
 
 .faq-answer {
-  padding: 10px;
-  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 1.2em;
+  color: rgba(79, 86, 101, 1);
+  font-weight: 300;
+  text-align: left;
+  border-left: 1px solid rgba(233, 235, 240, 1);
+  border-right: 1px solid rgba(233, 235, 240, 1);
+  border-bottom: 1px solid rgba(233, 235, 240, 1);
+}
+
+/* Subscribe */
+
+.cta{
+  width: 75vw;
+  margin: auto;
+  font-family: "Rubik";
+  background-color: #2161D5;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  height: 200px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 120px;
+}
+
+.cta > div:nth-child(1) {
+  width: 100%;
+  color: white;
+}
+
+.cta > div > h1{
+  font-size: 3em;
+}
+
+.cta > div > p{
+  margin-top: 10px;
+}
+
+.cta > div:nth-child(2) {
+  width: 70%;
+  text-align: center;
+}
+
+.cta > div > button {
+  border: none;
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  background: white;
+  color: #2161D5;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
+  text-align: center;
 }
