@@ -16,8 +16,14 @@
     font-size: 20px;
 }
 
+.middle-nav p{
+    color: black;
+}
+
+
 .middle-nav p:hover{
     font-weight: 700;
+    cursor: pointer;
 }
 
 

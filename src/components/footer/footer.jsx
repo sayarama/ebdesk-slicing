@@ -23,6 +23,7 @@ function footer() {
           <p>©2020EBDESK</p>
         </div>
         <div className="product">
+          <h2>Product</h2>
           <p>Download</p>
           <p>Pricing</p>
           <p>Locations</p>
@@ -31,6 +32,7 @@ function footer() {
           <p>Blog</p>
         </div>
         <div className="engage">
+          <h2>Engage</h2>
           <p>Geolabs ?</p>
           <p>FAQ</p>
           <p>Tutorials</p>
@@ -39,6 +41,7 @@ function footer() {
           <p>Terms of Services</p>
         </div>
         <div className="money">
+        <h2>Earn Money</h2>
           <p>Affilate</p>
           <p>Become Partner</p>
         </div>

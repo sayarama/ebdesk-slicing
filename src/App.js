@@ -1,6 +1,4 @@
-import logo from "./logo.svg";
 import "./App.css";
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
@@ -17,8 +15,8 @@ import OvBot from "./assets/overview-bottom.png";
 import cardGeo from "./assets/geo.png";
 import Gift from "./assets/gift.png";
 import Check from "./assets/check.svg";
-import Plus from "./assets/plus.svg"
-import Minus from "./assets/minimize.svg"
+import Plus from "./assets/plus.svg";
+import Minus from "./assets/minimize.svg";
 
 function App() {
   const [dropdown1, setDropdown1] = useState(false);

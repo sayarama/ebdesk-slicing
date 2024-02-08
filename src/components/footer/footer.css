@@ -11,8 +11,7 @@
 }
 
 .left-footer{
-    background-color: red;
-    width: 70%;
+    width: 100%;
 }
 
 .left-footer p{
@@ -20,17 +19,45 @@
     margin-bottom: 20px;
 }
 
+.left-footer p:nth-child(4) {
+    font-weight: 700;
+    color: rgba(175, 181, 192, 1);
+}
+
 .product{
-    background-color: blue;
-    width: 30%;
+    width: 40%;
+}
+
+.product h2 {
+    margin-bottom: 20px;
+}
+
+.product p{
+    margin-bottom: 10px;
 }
 
 .engage{
-    background-color: rgb(255, 31, 169);
-    width: 30%;
+    width: 40%;
+}
+
+
+.engage h2 {
+    margin-bottom: 20px;
+}
+
+.engage p{
+    margin-bottom: 10px;
 }
 
 .money{
-    background-color: yellow;
-    width: 30%;
+    width: 20%;
+}
+
+
+.money h2 {
+    margin-bottom: 20px;
+}
+
+.money p{
+    margin-bottom: 10px;
 }

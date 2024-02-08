@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700;800&display=swap');
+
+.about-hero{
+    background-image: url(../../assets//about-background.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 734px;
+    font-family: "Rubik";
+}
+
+.navbar-about{
+    width: 75vw;
+    margin: auto;
+}
+
+.nav-about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 30px 40px 30px;
+    font-family: "Rubik";
+}
+
+.middle-about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45%;
+    gap: 8;
+    font-size: 20px;
+}
+
+.middle-about p{
+    color: rgb(255, 255, 255);
+}
+
+
+.middle-about p:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.cta-about{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 20%;
+    
+}
+
+.cta-about button:nth-child(1) {
+    border: none;
+    background:none;
+    font-size: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.cta-about button:nth-child(2) {
+    border: 1px solid #ffffff;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    background: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Hero Article */
+
+.about-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    height: 70%;
+    color: white;
+}
+
+.about-article h1{
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.about-article p{
+    margin-bottom: 50px;
+    line-height: 1.6;
+}
+
+.about-article button {
+    padding: 13px 50px 13px 50px;
+    border-radius: 30px;
+    font-weight: 700;
+    border: none;
+    background: white;
+    color: rgba(33, 97, 213, 1);
+    font-weight: 700;
+    font-size: 1em;
+}
+
+/* Quote */
+
+.quote-main{
+    display: flex;
+}
+
+.quote-main > div:nth-child(1){
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 300px;
+}
+
+.quote-main > div:nth-child(1) > span{
+    position: absolute;
+    right: 50px;
+    top: 150px;
+}
+
+.quote-main > div:nth-child(1) > span > p{
+    font-size: 1.5em;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.quote-main > div:nth-child(2){
+    width: 40%;
+    position: relative;
+}
+
+.quote-main > div:nth-child(2) > span{
+    position: absolute;
+    right: 0px;
+    top: 150px;
+}
+
+/* advisor */
+.main-advisor{
+    width: 60vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.main-advisor > article > h1{
+    font-size: 3em;
+    font-weight: 500;
+    font-family: "Rubik";
+    color: rgba(30, 14, 98, 1);
+}
+
+.main-advisor > article:nth-child(3){
+    margin-top: 50px;
+}
+
+.main-advisor > article:nth-child(3) p{
+    padding-top: 20px;
+    width: 40%;
+    margin: auto;
+    color: rgba(79, 86, 101, 1);
+    font-family: "Rubik";
+}
+
+
+.main-advisor-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-advisor-card .advisor-card{
+    margin: 20px;
+}
+
+.advisor-card h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.advisor-card p{
+    font-weight: 500;
+    color: rgba(79, 86, 101, 1);
+    letter-spacing: 3px;
+}
