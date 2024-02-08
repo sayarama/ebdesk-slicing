@@ -32,7 +32,11 @@ function about() {
               </Link>
             </div>
             <div className="cta-about">
-              <button>Sign In</button>
+              <button>
+                <Link to="/sign-in" style={{textDecoration: "none", color: "white"}}>
+                Sign In
+                </Link>
+              </button>
               <button>Sign Up</button>
             </div>
           </nav>

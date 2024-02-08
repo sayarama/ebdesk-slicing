@@ -9,7 +9,9 @@ function navbar() {
         <nav className='nav-container'>
             <img src={Logo}/>
             <div className='middle-nav'>
+                <Link to="/" style={{textDecoration: "none", color: "black"}}>
                 <p>Home</p>
+                </Link>
                 <p>Product</p>
                 <p>Blog</p>
                 <p>Pricing</p>
@@ -19,7 +21,11 @@ function navbar() {
                 </Link>
             </div>
             <div className='cta-nav'>
-                <button>Sign In</button>
+                <button>
+                  <Link to="/sign-in" style={{textDecoration: "none", color: "#2161D5"}}>
+                  Sign In
+                  </Link>
+                </button>
                 <button>Sign Up</button>
             </div>
         </nav>

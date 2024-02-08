@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import About from './pages/about/about';
+import Login from './pages/login/login';
+import PageNotFound from "./components/404/404Page"
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements, Route, Routes,RouterProvider } from 'react-router-dom';
 
@@ -11,6 +13,8 @@ const router = createBrowserRouter(
     <Route>
       <Route path='/' element={<App/>}/>
       <Route path='/about' element={<About/>}/>
+      <Route path='/sign-in' element={<Login/>}/>
+      <Route path='*' element={<PageNotFound/>}/>
     </Route>
     
   )
