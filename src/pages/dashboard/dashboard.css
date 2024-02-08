@@ -1,0 +1,51 @@
+/* Sidebar.css */
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust the size of your logo */
+    margin-right: 10px;
+  }
+  
+  .sidebar h2 {
+    text-align: left;
+    margin: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .item-icon {
+    width: 20px; /* Adjust the size of your icons */
+    margin-right: 10px;
+  }
+  
+  .sidebar li:hover {
+    background-color: #555;
+  }
+  

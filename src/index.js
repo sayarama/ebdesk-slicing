@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import About from './pages/about/about';
 import Login from './pages/login/login';
+import Dashboard from './pages/dashboard/dashboard';
 import PageNotFound from "./components/404/404Page"
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, createRoutesFromElements, Route, Routes,RouterProvider } from 'react-router-dom';
@@ -14,6 +15,7 @@ const router = createBrowserRouter(
       <Route path='/' element={<App/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/sign-in' element={<Login/>}/>
+      <Route path='/dashboard' element={<Dashboard/>}/>
       <Route path='*' element={<PageNotFound/>}/>
     </Route>
     
