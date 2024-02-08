@@ -5,10 +5,13 @@ import LogoWhite from "../../assets/logo-white.svg";
 import { Link } from "react-router-dom";
 import Quote from "../../assets/quote.svg";
 import Grid from "../../assets/grid-top.svg";
-import Xavier from "../../assets/xavier.png"
-import Sara from "../../assets/sara.png"
-import Brandon from "../../assets/brandon.png"
-
+import Xavier from "../../assets/xavier.png";
+import Sara from "../../assets/sara.png";
+import Brandon from "../../assets/brandon.png";
+import Airlangga from "../../assets/airlangga.png";
+import Jokowi from "../../assets/jokowi.png";
+import Puan from "../../assets/puan.png";
+import Footer from "../../components/footer/footer"
 
 function about() {
   return (
@@ -19,7 +22,7 @@ function about() {
           <nav className="nav-about">
             <img src={LogoWhite} />
             <div className="middle-about">
-              <p>Home</p>
+              <Link to="/" style={{textDecoration: "none", color:"white"}}>Home</Link>
               <p>Product</p>
               <p>Blog</p>
               <p>Pricing</p>
@@ -74,26 +77,82 @@ function about() {
         </article>
         <article className="main-advisor-card">
           <div className="advisor-card">
-            <img src={Xavier}/>
+            <img src={Xavier} />
             <h1>Xavier Oswald</h1>
             <p>CO-FOUNDER, DEVELOPER</p>
           </div>
           <div className="advisor-card">
-            <img src={Sara}/>
+            <img src={Sara} />
             <h1>Xavier Oswald</h1>
             <p>CO-FOUNDER, DEVELOPER</p>
           </div>
           <div className="advisor-card">
-            <img src={Brandon}/>
+            <img src={Brandon} />
             <h1>Xavier Oswald</h1>
             <p>PROJECT MANAGER</p>
           </div>
         </article>
         <article>
           <h1>What Political Figure Say</h1>
-          <p>These are the stories of political figure who have joined us with great pleasure when using this crazy feature.</p>
+          <p>
+            These are the stories of political figure who have joined us with
+            great pleasure when using this crazy feature.
+          </p>
         </article>
+       <section className="card-container">
+       <article className="political-card">
+            <div>
+              <img src={Airlangga} />
+              <span>
+              <h5>Airlangga Hartanto</h5>
+              <p>Menteri Koordinator dan Perekonomian RI</p>
+              </span>
+            </div>
+            <span>
+              Saya minta kepada segenap pengurus DPD, provinsi, kabupten dan
+              kota, untuk kita harus memiliki roadmap 2024. Di tahun melakukan
+              penggalangan opini masyarakat
+            </span>
+        </article>
+        <article className="political-card">
+            <div>
+              <img src={Jokowi} />
+              <span>
+              <h5>Jokowi Dodo</h5>
+              <p>Presiden RI</p>
+              </span>
+            </div>
+            <span>
+            Daerah merupakan bagian dari pemerintah yang langsung berinteraksi dengan 
+            </span>
+        </article>
+        <article className="political-card">
+            <div>
+              <img src={Puan} />
+              <span>
+              <h5>Puan Maharani</h5>
+              <p>Ketua DPR dan Fraksi PDI Perjuangan</p>
+              </span>
+            </div>
+            <span>
+            Daerah merupakan bagian dari pemerintah yang langsung berinteraksi dengan masyarakat ketikaproses demokratisasi berlangsung.
+            </span>
+        </article>
+       </section>
       </section>
+
+      {/* CTA */}
+      <section className="cta">
+          <div>
+            <h1>Subscribe Now for  <br/> Get Special Features!</h1>
+            <p>Lets's subscribe with us and find the fun.</p>
+          </div>
+          <div>
+            <button>Subscribe Now</button>
+          </div>
+        </section>
+        {/* Footer */}
+        <Footer/>
     </>
   );
 }

@@ -146,6 +146,7 @@
     margin: auto;
     text-align: center;
     margin-top: 150px;
+    margin-bottom: 130px;
 }
 
 .main-advisor > article > h1{
@@ -178,6 +179,15 @@
     margin: 20px;
 }
 
+.card-container{
+    display: flex;
+    margin-top: 30px;
+}
+
+.card-container .political-card{
+    margin: 10px;
+}
+
 .advisor-card h1 {
     font-size: 1.5em;
     font-weight: 400;
@@ -189,4 +199,39 @@
     font-weight: 500;
     color: rgba(79, 86, 101, 1);
     letter-spacing: 3px;
+}
+
+.political-card{
+    text-align: left;
+    border: 1px solid rgba(233, 235, 240, 1);
+    width: 350px;
+    height: 170px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.political-card > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.political-card > span {
+    line-height: 1.6;
+    font-family: "Rubik";
+}
+
+.political-card > div > span {
+    margin-left: 20px;
+
+}
+
+.political-card > div > span h1 {
+    margin-left: 20px;
+    
+}
+
+.political-card > div > span p {
+    font-size: small;
+    
 }
