@@ -55,6 +55,7 @@
     font-size: 20px;
     margin-right: 20px;
     font-weight: 700;
+    cursor: pointer;
     color: white;
 }
 
@@ -65,6 +66,7 @@
     background: none;
     color: #ffffff;
     font-size: 20px;
+    cursor: pointer;
     font-weight: 700;
 }
 
@@ -99,6 +101,7 @@
     font-weight: 700;
     border: none;
     background: white;
+    cursor: pointer;
     color: rgba(33, 97, 213, 1);
     font-weight: 700;
     font-size: 1em;

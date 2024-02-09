@@ -6,7 +6,7 @@ import axios from 'axios';
 import Modal from '../../components/modal/modal';
 function User() {
   const [user, setUser] = useState([])
-  const [modal, setModal] = useState(null)
+  const [modalOpen, setModal] = useState(false)
   const getUser = () => {
     axios
         .get("https://dummyjson.com/users")
@@ -24,7 +24,24 @@ function User() {
   }, [])
   return (
     <main>
-      <Modal/>
+      {modalOpen? (
+        <Modal>
+          <h1>User Management</h1>
+            <p>If you need more info, please check Project Guidelines.</p>
+            <label>Name<span>*</span></label>
+            <input type='text' placeholder='Input Name'/>
+            <label>Username<span>*</span></label>
+            <input type='text' placeholder='Input Username'/>
+            <label>Email<span>*</span></label>
+            <input type='text' placeholder='Input Email'/>
+            <label>Gender<span>*</span></label>
+            <input type='text' placeholder='Choose Gender'/>
+            <div>
+                <button onClick={() => setModal(false)}>Cancel</button>
+                <button>Submit</button>
+            </div>
+        </Modal>
+      ): null}
       <section className='user-top'>
         <h1>User Management</h1>
         <p>Loremipsum/<span>Usermanagement</span></p>
@@ -34,7 +51,7 @@ function User() {
         <CiSearch/>
         <input type='text' placeholder='Search User Management'/>
         </div>
-        <button>
+        <button onClick={() => setModal(true)}>
           Add User
         </button>
       </section>
