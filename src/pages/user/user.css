@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;700;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+}
+
+.user-top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.user-top p{
+    font-weight: 300;
+    color: rgba(79, 86, 101, 1);
+}
+
+.user-management{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.user-management > div{
+    background-color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.user-management > div > input{
+    border: none;
+    width: 200px;
+
+}
+
+.user-management > div > input:focus{
+    outline: none;
+}
+
+
+.user-management > button{
+    padding: 15px 30px 15px 30px;
+    border: none;
+    background-color: rgba(58, 112, 217, 1);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.main-user{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.management-title{
+    display: flex;
+    background-color: white;
+    padding: 15px 30px 15px 30px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 17.5px;
+}
+
+.management-title > p{
+    margin-bottom: 10px;
+    width:80px;
+    margin-left: 10px;
+}
+
+.pagination{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 73px;
+}
+
+.pagination > div {
+    display: flex; 
+    gap: 20px;
+    padding: 15px;
+    align-items: center;
+    background-color: white;
+}
+
+.pagination > div > p{
+    padding: 5px;
+}
+
+.arrow{
+    padding: 5px;
+}
+
+.name-image{
+    display: flex;
+}
+
+.name-image img{
+    width: 20px;
+    align-items: center;
+    margin-right: 5px;
+}
