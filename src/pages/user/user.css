@@ -78,6 +78,10 @@
     margin-left: 10px;
 }
 
+.management-title > p:nth-child(6){
+    cursor: pointer;
+}
+
 .pagination{
     display: flex;
     justify-content: space-between;
@@ -94,6 +98,7 @@
 
 .pagination > div > p{
     padding: 5px;
+    cursor: pointer;
 }
 
 .arrow{

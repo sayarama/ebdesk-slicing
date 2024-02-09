@@ -7,9 +7,15 @@ import Modal from '../../components/modal/modal';
 function User() {
   const [user, setUser] = useState([])
   const [modalOpen, setModal] = useState(false)
+  const [skip, setSkips] = useState(0)
+  const [name, setName] = useState("")
+  const [username, setUsername] = useState("")
+  const [email, setEmail] = useState("")
+  const [gender, setGender] = useState("")
+
   const getUser = () => {
     axios
-        .get("https://dummyjson.com/users")
+        .get(`https://dummyjson.com/users?limit=6&skip=${skip}`)
         .then((result) => {
           console.log("inihasil ==>",result.data.users)
           setUser(result.data.users)
@@ -19,9 +25,26 @@ function User() {
         })
   }
 
+  const addUser = () => {
+    axios
+        .post("https://dummyjson.com/users/add", {
+          firstName: name,
+          email: email,
+          username: username,
+          gender: gender,
+        })
+        .then((response) => {
+          console.log("Daata ditambahkan", response)
+          alert("data berhasil ditambahkan")
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+  }
+
   useEffect(() => {
     getUser();
-  }, [])
+  }, [skip])
   return (
     <main>
       {modalOpen? (
@@ -29,16 +52,24 @@ function User() {
           <h1>User Management</h1>
             <p>If you need more info, please check Project Guidelines.</p>
             <label>Name<span>*</span></label>
-            <input type='text' placeholder='Input Name'/>
+            <input onChange={(e) => {
+              setName(e.target.value)
+            }} type='text' placeholder='Input Name'/>
             <label>Username<span>*</span></label>
-            <input type='text' placeholder='Input Username'/>
+            <input onChange={(e) => {
+              setUsername(e.target.value)
+            }}  type='text' placeholder='Input Username'/>
             <label>Email<span>*</span></label>
-            <input type='text' placeholder='Input Email'/>
+            <input onChange={(e) => {
+              setEmail(e.target.value)
+            }}  type='text' placeholder='Input Email'/>
             <label>Gender<span>*</span></label>
-            <input type='text' placeholder='Choose Gender'/>
+            <input onChange={(e) => {
+              setGender(e.target.value)
+            }}  type='text' placeholder='Choose Gender'/>
             <div>
                 <button onClick={() => setModal(false)}>Cancel</button>
-                <button>Submit</button>
+                <button onClick={addUser}>Submit</button>
             </div>
         </Modal>
       ): null}
@@ -64,7 +95,7 @@ function User() {
         <p>Action</p>
       </section>
       <section className='main-user'>
-          {user.slice(0, 6).map((item, id) => (
+          {user.map((item, id) => (
             <section key={id} className='management-title'>
             <span className='name-image'>
               <img src={item.image}/>
@@ -84,9 +115,9 @@ function User() {
         </article>
         <div>
           <MdKeyboardArrowLeft className='arrow'/>
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
+          <p onClick={() => setSkips(0)}>1</p>
+          <p onClick={() => setSkips(1)}>2</p>
+          <p onClick={() => setSkips(2)}>3</p>
           <MdKeyboardArrowRight className='arrow'/>
         </div>
       </section>
