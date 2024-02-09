@@ -17,7 +17,6 @@ function User() {
     axios
         .get(`https://dummyjson.com/users?limit=6&skip=${skip}`)
         .then((result) => {
-          console.log("inihasil ==>",result.data.users)
           setUser(result.data.users)
         })
         .catch((err) => {
@@ -34,7 +33,6 @@ function User() {
           gender: gender,
         })
         .then((response) => {
-          console.log("Daata ditambahkan", response)
           alert("data berhasil ditambahkan")
         })
         .catch((err) => {

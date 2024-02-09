@@ -31,7 +31,6 @@ function Sidebar() {
             },
           })
           .then((response) => {
-            console.log(response.data)
             setProfile(response?.data)
           })
           .catch((err) => {
